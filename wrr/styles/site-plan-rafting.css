@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Rhodium+Libre&display=swap')
+
+:body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+
+:body {
+    background-color: #386FA7;
+  }
+
+:root {
+  --primary-color: #143C54;
+  --secondary-color: #977C4C;
+  --accent1-color: #FFFCFF;
+  --accent2-color: #386FA7;
+
+  --heading-font: 'Madimi One', serif;
+  --paragraph-font: 'Rhodium Libre', serif;
+
+  --nav-background-color: #B6C2D9;
+  --nav-link-color: #9E90A2;
+  --nav-hover-link-color: #828489;
+  --nav-hover-background-color: #4D7EA8;
+}
+        
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+}
+        
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+:header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+p {
+  padding: 25px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
