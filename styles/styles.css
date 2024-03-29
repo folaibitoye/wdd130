@@ -1,3 +1,10 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  
   main {
     max-width: 840px;
   }
@@ -5,20 +12,24 @@
   p { padding: 0;}
   
   aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: 20em;
     text-align: center;
   }
   
+  main img {
+  /* you most likely will have other declarations here */
+  float: right;
+  } 
   aside img {
     width: 200px;
     height: auto;
   }
   
+  aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+  }
   footer {
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -29,3 +40,12 @@
     width: 150px;
     height: auto;
   } 
+  /* Class Selectors */
+  
+  .box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+  }
