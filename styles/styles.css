@@ -12,14 +12,20 @@
   p { padding: 0;}
   
   aside {
-    width: 20em;
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
   }
   
   main img {
-  /* you most likely will have other declarations here */
-  float: right;
+    width: 150px;
+    height: auto;
   } 
+  
   aside img {
     width: 200px;
     height: auto;
