@@ -4,12 +4,33 @@
   box-sizing: border-box;
   }
   
+  nav {
+    background-color: steelblue;
+    padding: 10px;
+  }
   
+  nav a{
+    color:white;
+    display: block;
+    padding:20px;
+  }
+
+  h1{
+    color: steelblue;
+  }
+
+  img{
+    width:150px;
+    height:auto;
+    border:1px solid steelblue;
+    padding:2px;
+    box-shadow: 0 0 30px gray;
+  }
+
+
   main {
     max-width: 840px;
   }
-  
-  p { padding: 0;}
   
   aside {
     width: 20rem;
@@ -21,32 +42,32 @@
     text-align: center;
   }
   
-  main img {
-    width: 150px;
-    height: auto;
-  } 
-  
   aside img {
     width: 200px;
     height: auto;
   }
   
-  aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
-  }
+  main img {
+    width: 150px;
+    height: auto;
+  } 
+  
+  p { padding: 0;}
+
   footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
   }
   
-  main img {
-    width: 150px;
-    height: auto;
-  } 
-  /* Class Selectors */
+
+  aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+  }
+ 
+ /* Class Selectors */
   
   .box {
   margin: 1rem;
