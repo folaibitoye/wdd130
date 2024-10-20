@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #28A745;
+    --accent1-color: #FFC107;
+    --accent2-color: #DC3545 ;
+  
+    --heading-font: 'Open sans', poppins;
+    --paragraph-font: 'Rhodium Libre', serif;
+    --text-font:'Open sans';
+  
+    --nav-background-color: #B6C2D9;
+    --nav-link-color: #9E90A2;
+    --nav-hover-link-color: #828489;
+    --nav-hover-background-color: #4D7EA8;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+  }
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+   
+  }
+p {
+    font-family:var(--text-font)
+    color: var(--accent1-color)
+}
+
+a   {
+    text-decoration:none;
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative; /* If removed, what happens? */
+}
+
+.hero img{
+   display:block;
+   width:100%;
+   height:auto; 
+}
+
+.hero h1{
+  display:block
+  text-align: center
+  position: absolute;
+	Top: 15px;
+  left: 10px
+	
+}
+

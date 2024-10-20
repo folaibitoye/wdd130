@@ -1,78 +1,94 @@
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-  
-  nav {
-    background-color: steelblue;
-    padding: 10px;
-  }
-  
-  nav a{
-    color:white;
-    display: block;
-    padding:20px;
-  }
+/* Basic styling */
+:root {
+    --primary-color: #2c3e50; /* Dark blue */
+    --secondary-color: #18bc9c; /* Teal */
+    --background-color: #f4f4f4; /* Light gray */
+    --text-color: #333333; /* Dark gray */
+}
 
-  h1{
-    color: steelblue;
-  }
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
 
-  img{
-    width:150px;
-    height:auto;
-    border:1px solid steelblue;
-    padding:2px;
-    box-shadow: 0 0 30px gray;
-  }
-
-
-  main {
+/* Header, footer, and grid styling */
+header, .grid, footer {
     max-width: 840px;
-  }
-  
-  aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1️⃣ */
+    margin: 0 auto;
+}
+
+/* Navigation styling */
+nav {
+    background-color: steelblue;
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-  }
-  
-  aside img {
-    width: 200px;
-    height: auto;
-  }
-  
-  main img {
-    width: 150px;
-    height: auto;
-  } 
-  
-  p { padding: 0;}
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-  }
-  
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* White */
+}
 
-  aside h2 {
-  position: absolute;
-  top: 47px;
-  left: 150px;
-  }
- 
- /* Class Selectors */
-  
-  .box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
-  }
+/* Styling the grid container */
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Main content styling */
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+/* Aside styling */
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-top: 2rem;
+}
+
+/* H1 heading styling */
+h1 {
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Box styles for unordered lists and asides */
+.box {
+    list-style: none;
+    padding: 0;
+}
+
+/* Utility classes for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure no underlines for social media links */
+footer a {
+    text-decoration: none;
+}
