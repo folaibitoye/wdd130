@@ -1,0 +1,115 @@
+/* Define CSS variables for the color scheme in the :root pseudo-class */
+:root {
+    --primary-color: #007BFF; /* Example primary color */
+    --secondary-color: #ffa500; /* Example secondary color */
+    --background-color: #f0f0f0; /* Light background color */
+    --text-color: #333333; /* Dark text color */
+    --accent-color: #FF4500; /* Accent color for highlights */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+  }  
+
+  /* General styling for the body */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style headings */
+  h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  /* Style paragraph elements */
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+  
+  /* Remove underlines from social media links */
+  footer nav a img {
+    text-decoration: none;
+  }
+  
+  /* Limit the width of the page */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Hero container styling */
+  .hero {
+    position: relative;
+  }
+  
+  /* Style the hero image */
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Position the h1 and article absolutely */
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    right:0%;
+  
+    color: var(--text-color);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark background for contrast */
+    padding: 0.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-bottom:0.2em;
+  }
+  
+  .hero article {
+    position: absolute;
+    Top:40%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with opacity */
+    padding-right: 5em;
+    padding-left: 30em;
+    padding-Top: 3em;
+    padding-bottom: 3em;
+    border-radius: 5px;
+  }
+  
+  /* Float the image inside the article */
+  .hero article img {
+    float: right;
+    margin-left: 2em;
+    Top: 1px;
+    Bottom:0.5px;
+  }
+  
+  /* Style social media navigation links */
+  footer nav a {
+    display: inline-block;
+    margin: 0 10px;
+  }
