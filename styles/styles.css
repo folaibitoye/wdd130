@@ -5,7 +5,19 @@
     --background-color: #f4f4f4; /* Light gray */
     --text-color: #333333; /* Dark gray */
 }
+* {  
+    margin: 0 ;
+    padding:0 ;
+    box-sizing:border-box;
+}
+ .box {
 
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem
+    background-colour: #ddd;
+    color:#000;
+ }
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
@@ -19,6 +31,7 @@ body {
 header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
+    padding:0 1rem;
 }
 
 /* Navigation styling */
@@ -43,15 +56,17 @@ nav a {
 .grid {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem;
-    margin: 2rem 0;
+    
 }
 
 /* Main content styling */
 main {
-    grid-column: 2/3;
+    grid-column: 2;
     margin: 1rem;
+}
+
+main img{
+    float:right;
 }
 
 /* Aside styling */
@@ -60,6 +75,16 @@ aside {
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
+
+aside img {
+    width: 200px;
+    height:auto;
+    }
+}
+aside h2{
+    position:absolute;
+    top: 47px;
+    left:150px:
 }
 
 /* Footer styling */
@@ -76,6 +101,9 @@ h1 {
     border-bottom: 2px solid var(--secondary-color);
 }
 
+p{
+    margin:1rem
+}
 /* Box styles for unordered lists and asides */
 .box {
     list-style: none;

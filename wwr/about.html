@@ -1,63 +1,88 @@
 
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Folahan Ibitoye | WDD 130</title>
-        <meta name="description" content="Folahan Ibitoye's BYU Idaho WDD 130 course home page.">
-        <meta name="author" content="Folahan Ibitoye">
-        <link rel="stylesheet" href ="styles/rafting.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    </head>
-    <body>
-      <header>
-        <img src="images/wwlogo.jpg" alt="Rafting Site Logo">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="trips.html">Trips</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </header>
-      <main>
-        <div class="hero">
-          <img src="images/river-narrow1.jpg" alt="Background">
-          <h1>WHITE WATER RAFTING</h1>
-          <article>
-            <img src="images/happycust5.png" alt="Happy customer enjoying a rafting trip">
-            <p>The purpose of establishing an online presence for your rafting business is to effectively market your services, engage with customers, streamline the booking process, and build a reputable brand that attracts adventure seekers and outdoor enthusiasts.</p>
-          </article>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Folahan Ibitoye | WDD 130</title>
+    <meta name="description" content="Folahan Ibitoye's BYU Idaho WDD 130 course home page.">
+    <meta name="author" content="Folahan Ibitoye">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/wwlogo.jpg" alt="Rafting Site Logo" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
         </div>
-        <section>
-          <h2>History</h2>
-          <p>Whitewater rafting can be traced back to 1811 when the first recorded attempt to navigate the Snake River in Wyoming was planned. With no training, experience, or proper equipment, the river was found to be too difficult and dangerous. Hence, it was given the nickname “Mad River.”
-            The first rubber raft was made by Lt. John Fremont and Horace H. Day believed to be built it the 1840s. They planned to survey the Rocky Mountains and Great Plains. Although invented back then,</p>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/river-narrow1.jpg" alt="Background" class="hero-img">
+            <h1>WHITE WATER RAFTING</h1>
+            <article class="about-article">
+                <img src="images/happycust5.png" alt="Happy customer enjoying a rafting trip" class="customer-img">
+                <p>The purpose of establishing an online presence for your rafting business is to effectively market your services, engage with customers, streamline the booking process, and build a reputable brand that attracts adventure seekers and outdoor enthusiasts.</p>
+            </article>
+        </div>
+        <section class="history-section">
+            <h2>History</h2>
+            <figure>
+                <img src="images/history.jpg" alt="Historical image of rafting" class="history-img">
+                <figcaption>Rafting history over the years</figcaption>
+            </figure>
+            <div class="history-content">
+                <p>Whitewater rafting can be traced back to 1811 when the first recorded attempt to navigate the Snake River in Wyoming was planned. With no training, experience, or proper equipment, the river was found to be too difficult and dangerous. Hence, it was given the nickname “Mad River.”</p>
+                <p>The first rubber raft was made by Lt. John Fremont and Horace H. Day, believed to be built in the 1840s. They planned to survey the Rocky Mountains and Great Plains. Although invented back then, rafting has since evolved significantly.</p>
+            </div>
         </section>
-        <section>
-          <h2>Adventure Awaits You!</h2>
-          <img src="images/rafting1.jpg" alt="first adventure">
-          <img src="images/rafting2.jpg" alt="Second adventure">
-          <img src="images/rafting3.jpg" alt="Third adventure">
-          <img src="images/rafting4.jpg" alt="Fourth adventure">
-          <img src="images/rafting5.jpg" alt="Fifth adventure">
+        <section class="adventures-section">
+            <h2>Adventure Awaits You!</h2>
+            <div class="adventures-gallery">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="First adventure">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Second adventure">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Third adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="Fourth adventure">
+                    <figcaption>The Canyon's Edge</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Fifth adventure">
+                    <figcaption>Rapid Rush</figcaption>
+                </figure>
+            </div>
         </section>
-      </main>
-      <footer></footer>
-        <p> © 2024 White Rafting Company | Folahan Ibitoye </p>
-        <nav>
-          <a href="https.//facebook.com">
-            <img src="images/facebk.png" alt="facebook logo">
-          </a>
-          <a href="https.//twitter.com">
-            <img src="images/twitterlogo.png" alt="twitter logo">
-          </a>
-          <a href="https.//instagram.com">
-            <img src="images/instagramlogo.jpg" alt="instagram logo">
-          </a>
+    </main>
+    <footer>
+        <p>© 2024 White Rafting Company | Folahan Ibitoye</p>
+        <nav class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebk.png" alt="Facebook logo">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitterlogo.png" alt="Twitter logo">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagramlogo.jpg" alt="Instagram logo">
+            </a>
         </nav>
-      </footer>
-    </body>
+    </footer>
+</body>
 </html>

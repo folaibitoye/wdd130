@@ -1,64 +1,61 @@
-/* Define CSS variables for the color scheme in the :root pseudo-class */
 :root {
-    --primary-color: #007BFF; /* Example primary color */
-    --secondary-color: #ffa500; /* Example secondary color */
-    --background-color: #f0f0f0; /* Light background color */
-    --text-color: #333333; /* Dark text color */
-    --accent-color: #FF4500; /* Accent color for highlights */
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
-  }  
+  --primary-color: #007BFF; /* Example primary color */
+  --secondary-color: #ffa500; /* Example secondary color */
+  --background-color: #f0f0f0; /* Light background color */
+  --text-color: #333333; /* Dark text color */
+  --accent-color: #FF4500; /* Accent color for highlights */
+}
 
-  /* General styling for the body */
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Style headings */
-  h1, h2 {
-    color: var(--primary-color);
-    margin-bottom: 0.5em;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-  }
-  
-  h2 {
-    font-size: 2em;
-  }
-  
-  /* Style paragraph elements */
-  p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: var(--text-color);
-  }
-  
-  /* Remove underlines from social media links */
-  footer nav a img {
-    text-decoration: none;
-  }
-  
-  /* Limit the width of the page */
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Hero container styling */
-  .hero {
-    position: relative;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+}  
+
+/* General styling for the body */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  color:-var(--background-color);
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav a {
+  color: -var(--background-color);
+  text-decoration: none;
+  margin: 0 15px;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color:-var(--background-color);
+}
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Style paragraph elements */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
   /* Style the hero image */
   .hero img {
     display: block;
@@ -90,7 +87,7 @@
     left: 10%;
     background-color: rgba(255, 255, 255, 0.7); /* Light background with opacity */
     padding-right: 5em;
-    padding-left: 30em;
+    padding-left: 3em;
     padding-Top: 3em;
     padding-bottom: 3em;
     border-radius: 5px;
@@ -99,13 +96,60 @@
   /* Float the image inside the article */
   .hero article img {
     float: right;
-    margin-left: 2em;
+    margin-left: 0;
     Top: 1px;
     Bottom:0.5px;
   }
-  
-  /* Style social media navigation links */
-  footer nav a {
-    display: inline-block;
-    margin: 0 10px;
-  }
+
+.about-article {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.customer-img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.history-section {
+  padding: 20px;
+}
+
+.history-img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.history-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.adventures-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.adventures-gallery figure {
+  text-align: center;
+}
+
+footer {
+  background-color:  var(--text-color);
+  color:-var(--background-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
