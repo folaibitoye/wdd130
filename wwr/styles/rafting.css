@@ -15,11 +15,45 @@
 /* General styling for the body */
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
-  background-color: var(--text-color);
+  padding: .1em;
+  font-size: 20px;
+  grid-column: 1;
+  background-color: var(--primary-color);
   color:-var(--background-color);
+}
+nav {
+  display: flex;
+  gap:30px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Auto for the logo and remaining space for nav */
+  align-items: center; /* Center-aligns content vertically */
+  padding: 10px 20px;
+  background-color: var(--primary-color);; /* Adjust as needed */
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  gap: 200px; /* Adjust spacing between links */
+  justify-content: flex-end; /* Pushes links to the far right */
+}
+
+/* Link styling */
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  justify-content: space-between;
+}
+
+header nav a:hover {
+  text-decoration: underline; /* Optional hover effect */
 }
 
 .logo {
@@ -28,8 +62,9 @@
 
 nav a {
   color: -var(--background-color);
+  display: block;
   text-decoration: none;
-  margin: 0 15px;
+  padding: 1rem;
 }
 .hero {
   position: relative;
@@ -127,19 +162,32 @@ p {
   margin-top: 20px;
 }
 
+.adventures-section {
+  padding: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping for inline elements */
+}
+
 .adventures-gallery {
-  display: grid;
+  display: inline-flex;
   grid-template-columns: repeat(5, 1fr);
-  gap: 15px;
+  gap: 40px;
   margin-top: 20px;
 }
 
 .adventures-gallery figure {
-  text-align: center;
+    flex: 0 0 auto; /* Prevents figures from shrinking */
+    width: 230px; /* Adjust based on desired image width */
+    text-align: center; /* Centers the caption below each image */
 }
 
+.adventures-gallery img {
+  width: 100%; /* Makes the image fill the figure's width */
+  height: auto; /* Keeps the image's aspect ratio */
+  border-radius: 5px; /* Optional: Adds a rounded border */
+}
 footer {
-  background-color:  var(--text-color);
+  background-color:  var(--primary-color);
   color:-var(--background-color);
   padding: 10px;
   text-align: center;
