@@ -1,203 +1,228 @@
 :root {
-  --primary-color: #007BFF; /* Example primary color */
-  --secondary-color: #ffa500; /* Example secondary color */
-  --background-color: #f0f0f0; /* Light background color */
-  --text-color: #333333; /* Dark text color */
-  --accent-color: #FF4500; /* Accent color for highlights */
+  --primary-color: #007BFF;
+  --secondary-color: #ffa500;
+  --background-color: #f0f0f0;
+  --text-color: #333333;
+  --accent-color: #FF4500;
 }
 
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
-  box-sizing:border-box ;
-}  
+  box-sizing: border-box;
+}
 
-/* General styling for the body */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header */
 .header-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: .1em;
-  font-size: 20px;
-  grid-column: 1;
+  padding: 0.5em;
   background-color: var(--primary-color);
-  color:-var(--background-color);
 }
+
 nav {
   display: flex;
-  gap:30px;
+  gap: 30px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: auto 1fr; /* Auto for the logo and remaining space for nav */
-  align-items: center; /* Center-aligns content vertically */
-  padding: 10px 20px;
-  background-color: var(--primary-color);; /* Adjust as needed */
-  color: #fff;
-}
-
-header nav {
-  display: flex;
-  gap: 200px; /* Adjust spacing between links */
-  justify-content: flex-end; /* Pushes links to the far right */
-}
-
-/* Link styling */
-header nav a {
+.header-container nav a {
   color: #fff;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  justify-content: space-between;
 }
 
-header nav a:hover {
-  text-decoration: underline; /* Optional hover effect */
+.header-container nav a:hover {
+  text-decoration: underline;
 }
-
-.logo {
-  max-width: 150px;
-}
-
 nav a {
   color: -var(--background-color);
   display: block;
   text-decoration: none;
   padding: 1rem;
 }
-.hero {
-  position: relative;
+/* Contact Information Section */
+.contact-info {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
   text-align: center;
-  color:-var(--background-color);
 }
-h1, h2 {
+
+.contact-info h2 {
+  font-size: 2em;
   color: var(--primary-color);
   margin-bottom: 0.5em;
 }
 
-h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-/* Style paragraph elements */
-p {
+.contact-info p {
   font-size: 1em;
-  line-height: 1.6;
-  color: var(--text-color);
+  margin-bottom: 0.5em;
 }
 
-  /* Style the hero image */
-  .hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* Position the h1 and article absolutely */
-  .hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 0%;
-    right:0%;
-  
-    color: var(--text-color);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark background for contrast */
-    padding: 0.5em;
-    padding-left: 8em;
-    padding-right: 8em;
-    padding-bottom:0.2em;
-  }
-  
-  .hero article {
-    position: absolute;
-    Top:40%;
-    right: 10%;
-    bottom: 10%;
-    left: 10%;
-    background-color: rgba(255, 255, 255, 0.7); /* Light background with opacity */
-    padding-right: 5em;
-    padding-left: 3em;
-    padding-Top: 3em;
-    padding-bottom: 3em;
-    border-radius: 5px;
-  }
-  
-  /* Float the image inside the article */
-  .hero article img {
-    float: right;
-    margin-left: 0;
-    Top: 1px;
-    Bottom:0.5px;
-  }
-
-.about-article {
-  display: flex;
-  align-items: center;
-  padding: 20px;
+.contact-info iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin-top: 1em;
 }
 
-.customer-img {
-  max-width: 200px;
-  margin-right: 20px;
-}
-
-.history-section {
-  padding: 20px;
-}
-
-.history-img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.history-content {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.adventures-section {
-  padding: 20px;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  white-space: nowrap; /* Prevents wrapping for inline elements */
-}
-
-.adventures-gallery {
-  display: inline-flex;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.adventures-gallery figure {
-    flex: 0 0 auto; /* Prevents figures from shrinking */
-    width: 230px; /* Adjust based on desired image width */
-    text-align: center; /* Centers the caption below each image */
-}
-
-.adventures-gallery img {
-  width: 100%; /* Makes the image fill the figure's width */
-  height: auto; /* Keeps the image's aspect ratio */
-  border-radius: 5px; /* Optional: Adds a rounded border */
-}
-footer {
-  background-color:  var(--primary-color);
-  color:-var(--background-color);
-  padding: 10px;
+/* Team Profiles */
+.team {
+  max-width: 1000px;
+  margin: 2em auto;
   text-align: center;
 }
 
-.social-links {
-  display: flex;
-  justify-content: flex-end;
+.team h2 {
+  font-size: 2em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
 }
 
-.social-links a {
-  margin-left: 10px;
+.team figure {
+  display: inline-block;
+  max-width: 200px;
+  margin: 1em;
+  text-align: center;
 }
+
+.team img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.team figcaption {
+  font-size: 1em;
+  color: var(--text-color);
+  margin-top: 0.5em;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: var(--background-color);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+}
+
+.contact-form fieldset {
+  border: none;
+  margin-bottom: 1em;
+}
+
+.contact-form legend {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.contact-form .radio-group {
+  display: flex;
+  gap: 1em;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

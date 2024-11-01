@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #007BFF; /* Example primary color */
+  --secondary-color: #ffa500; /* Example secondary color */
+  --background-color: #f0f0f0; /* Light background color */
+  --text-color: #333333; /* Dark text color */
+  --accent-color: #FF4500; /* Accent color for highlights */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+}  
+
+/* General styling for the body */
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .1em;
+  font-size: 20px;
+  grid-column: 1;
+  background-color: var(--primary-color);
+  color:-var(--background-color);
+}
+nav {
+  display: flex;
+  gap:30px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Auto for the logo and remaining space for nav */
+  align-items: center; /* Center-aligns content vertically */
+  padding: 10px 20px;
+  background-color: var(--primary-color);; /* Adjust as needed */
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  gap: 200px; /* Adjust spacing between links */
+  justify-content: flex-end; /* Pushes links to the far right */
+}
+
+/* Link styling */
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  justify-content: space-between;
+}
+
+header nav a:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
+
+.logo {
+  max-width: 150px;
+}
+
+nav a {
+  color: -var(--background-color);
+  display: block;
+  text-decoration: none;
+  padding: 1rem;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color:-var(--background-color);
+}
+h1, h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* Style paragraph elements */
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+  /* Style the hero image */
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Position the h1 and article absolutely */
+  .hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    right:0%;
+  
+    color: var(--text-color);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark background for contrast */
+    padding: 0.5em;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-bottom:0.2em;
+  }
+  
+  .hero article {
+    position: absolute;
+    Top:40%;
+    right: 10%;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with opacity */
+    padding-right: 5em;
+    padding-left: 3em;
+    padding-Top: 3em;
+    padding-bottom: 3em;
+    border-radius: 5px;
+  }
+  
+  /* Float the image inside the article */
+  .hero article img {
+    float: right;
+    margin-left: 0;
+    Top: 1px;
+    Bottom:0.5px;
+  }
+
+.about-article {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.customer-img {
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+.history-section {
+  padding: 20px;
+}
+
+.history-img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.history-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.adventures-section {
+  padding: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping for inline elements */
+}
+
+.adventures-gallery {
+  display: inline-flex;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.adventures-gallery figure {
+    flex: 0 0 auto; /* Prevents figures from shrinking */
+    width: 230px; /* Adjust based on desired image width */
+    text-align: center; /* Centers the caption below each image */
+}
+
+.adventures-gallery img {
+  width: 100%; /* Makes the image fill the figure's width */
+  height: auto; /* Keeps the image's aspect ratio */
+  border-radius: 5px; /* Optional: Adds a rounded border */
+}
+footer {
+  background-color:  var(--primary-color);
+  color:-var(--background-color);
+  padding: 10px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
